@@ -144,9 +144,16 @@
 				<textarea id="tinymce"></textarea>
 			</div>
 			
-			<button class="btn btn-primary mt-4" type="submit">Submit</button>
+			<button class="btn btn-primary mt-4" type="submit" onclick="selectMedia()">Submit</button>
 		</form>
 	</div>
 	
 </body>
+<script>
+
+function selectMedia() {
+  var myContent = tinymce.get("tinymce").getContent();
+  alert(myContent);
+}
+</script>
 </html>
